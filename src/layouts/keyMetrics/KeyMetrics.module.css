@@ -1,0 +1,105 @@
+.metricsSection {
+  padding: var(--space-xl) 5vw;
+  background: #f9fbff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Left side - city images */
+.left {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cityCard {
+  position: relative;
+  text-align: center;
+}
+
+.cityCard img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+
+.cityLabel {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--color-primary, #1e3a8a);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Right side - metrics */
+.right {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary-dark, #1e3a8a);
+}
+
+.metricCard {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.metricCard:hover {
+  transform: translateY(-4px);
+}
+
+.metricCard h3 {
+  font-size: 1.6rem;
+  color: var(--color-primary, #1e3a8a);
+  margin-bottom: 0.3rem;
+}
+
+.metricCard p {
+  font-size: 1rem;
+  color: var(--color-text, #444);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cityCard img {
+    width: 150px;
+    height: 150px;
+  }
+  .heading {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,38 @@
+.howItWorksMainDiv{
+    margin-top: 10vh;
+}
+
+.HowItWorksDiv{
+    padding: 5vh 10vh;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.HowItWorksDiv h1{
+    font-size: 4rem;
+    font-weight: 500;
+    padding-bottom: 2vh;
+    color: var(--color-main);
+}
+
+.HowItWorksDiv h2{
+    font-size: 1.6rem;
+    color: var(--color-sub-main);
+    max-width: 1200px;
+}
+
+.lottieLinesDiv{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lottieFullWidth {
+  width: 100vw;
+  /* height: 200px; */
+}

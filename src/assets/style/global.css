@@ -1,0 +1,86 @@
+/* Reset some browser defaults */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  line-height: 1.2;
+}
+
+/* Links */
+a {
+  color: var(--color-sub-main);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+  transform: scale(1.2);
+  transition: ease-in-out .5s;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+.headerButton_blue {
+  background-color: var(--color-sub-blue);
+  font-size: var(--font-size-md);
+  color: white;
+  padding: 15px 25px;
+  border-radius: var(--radius-lg);
+  border: none;
+}
+
+.headerButtonWhite {
+  /* background-color: var(--color-primary); */
+  font-size: var(--font-size-md);
+  color: var(--color-sub-main);
+  padding: 15px 25px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-sub-blue);
+}
+
+.headerButton_blue:hover,.headerButtonWhite:hover{
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+
+.headerButtonWhite:hover{
+  color: black;
+}

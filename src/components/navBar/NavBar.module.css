@@ -1,0 +1,12 @@
+.header_nav{
+    /* background-color: pink; */
+    height: 100%;
+    display: flex;
+    gap: var(--space-lg);
+    width: calc(90vw/3);
+    align-items: center;
+}
+
+.navLink{
+    font-size: var(--font-size-lg);
+}

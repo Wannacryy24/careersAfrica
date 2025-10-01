@@ -1,0 +1,89 @@
+.missionSection {
+  padding: 5vw;
+  min-height: 80vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.poleType{
+  height: 10vh;
+  width: 3px;
+  background-color: var(--color-sub-main);
+  margin-left: 45vw;
+}
+
+.block {
+  margin-bottom: var(--space-xxl);
+  position: relative;
+}
+
+/* Faded background text (watermark) */
+.bgText {
+  font-size: 4.5rem;
+  font-weight: 100;
+  color: rgba(30, 58, 138, 0.08); /* faint navy blue */
+  text-transform: uppercase;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Foreground title */
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #323c76;
+  margin-bottom: var(--space-md);
+}
+
+/* Content text */
+.text {
+  padding-top: 20px;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+  color: var(--color-main);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bgText {
+    font-size: 3rem;
+    top: -20px;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bgText {
+    font-size: 2rem;
+    top: -15px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.95rem;
+  }
+}
